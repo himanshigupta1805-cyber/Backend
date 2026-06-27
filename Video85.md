@@ -21,7 +21,7 @@ Mainly used for creating/running tools.
 Example:
 npx create-react-app myapp
 
-Relation:</hr>
+Relation:<hr/>
 
 Node.js → runs JavaScript
 npm → installs/manages packages
@@ -29,3 +29,20 @@ npx → executes packages
 
 <h3>What is Slugify??</h3> 
 The urls that we see, they dont have any spaces and all. So, slugify can be used to convert any string to form urls.
+
+<h3>What is Express.js??</h3> 
+1. A lightweight backend web framework for Node.js.
+2. Used to build web servers and APIs easily.
+3. It handles requests, routes, and responses.
+
+Here:
+
+app.get() → creates a route
+req → request from client
+res → response sent to client
+listen() → starts the server
+
+<h4>Relation:</h4>
+
+Node.js → runs JavaScript on server
+Express → helps build server/API using Node.js
