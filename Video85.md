@@ -1,49 +1,105 @@
-# Backend from code with harry
-<h3> Node.js, npm, npx (Short Notes)</h3>  
+# Backend Notes (Code With Harry)
 
-Node.js:
+## Node.js, npm, npx
 
-Runtime environment that lets you run JavaScript outside the browser.
-Command:
+### Node.js
+
+- Node.js is a runtime environment that allows us to run JavaScript outside the browser.
+- Command:
+
+```bash
 node file.js
+```
 
-npm (Node Package Manager):
+---
 
-Package manager that comes with Node.js.
-Used to install and manage libraries/packages.
+### npm (Node Package Manager)
+
+- npm comes installed with Node.js.
+- It is used to install and manage libraries/packages.
+
 Example:
+
+```bash
 npm install react
+```
 
-npx (Node Package Execute):
+---
 
-Tool that runs packages without permanently installing them.
-Mainly used for creating/running tools.
+### npx (Node Package Execute)
+
+- npx is used to execute packages without permanently installing them.
+- Mainly used for creating and running tools.
+
 Example:
+
+```bash
 npx create-react-app myapp
+```
 
-Relation:
+---
 
-Node.js → runs JavaScript
-npm → installs/manages packages
-npx → executes packages
-<hr/>
-<h3>What is Slugify??</h3> 
-The urls that we see, they dont have any spaces and all. So, slugify can be used to convert any string to form urls.
-<hr/>
-<h3>What is Express.js??</h3> 
-1. A lightweight backend web framework for Node.js.<br/>
-2. Used to build web servers and APIs easily.<br/>
-3. It handles requests, routes, and responses.<br/>
+### Relation
 
-Here:
+```
+Node.js → Runs JavaScript
+npm → Installs and manages packages
+npx → Executes packages
+```
 
-app.get() → creates a route
-req → request from client
-res → response sent to client
-listen() → starts the server
+---
 
-<h4>Relation:</h4>
+# What is Slugify?
 
-Node.js → runs JavaScript on server
-Express → helps build server/API using Node.js
-<hr/>
+- URLs usually do not contain spaces or special characters.
+- Slugify converts a normal string into a URL-friendly format.
+
+Example:
+
+```
+"My New Project"
+```
+
+Converted to:
+
+```
+my-new-project
+```
+
+---
+
+# What is Express.js?
+
+- Express.js is a lightweight backend web framework for Node.js.
+- It is used to create web servers and APIs easily.
+- It handles requests, routes, and responses.
+
+Example:
+
+```javascript
+const express = require("express");
+
+const app = express();
+
+app.get("/", (req, res) => {
+    res.send("Hello World");
+});
+
+app.listen(3000);
+```
+
+### Here:
+
+- `app.get()` → Creates a route
+- `req` → Request received from client
+- `res` → Response sent to client
+- `listen()` → Starts the server
+
+---
+
+## Relation
+
+```
+Node.js → Runs JavaScript on server
+Express.js → Helps build servers and APIs using Node.js
+```
