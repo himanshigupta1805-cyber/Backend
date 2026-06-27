@@ -1,5 +1,5 @@
 # Backend from code with harry
-<h4> Node.js, npm, npx (Short Notes)</h4>  
+<h3> Node.js, npm, npx (Short Notes)</h3>  
 
 Node.js:
 
@@ -21,11 +21,11 @@ Mainly used for creating/running tools.
 Example:
 npx create-react-app myapp
 
-Relation:
+Relation:</hr>
 
 Node.js → runs JavaScript
 npm → installs/manages packages
 npx → executes packages
 
-<h4>What is Slugify??</h4> 
+<h3>What is Slugify??</h3> 
 The urls that we see, they dont have any spaces and all. So, slugify can be used to convert any string to form urls.
